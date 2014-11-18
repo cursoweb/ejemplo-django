@@ -52,3 +52,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+media/
+db.sqlite3
+curso/settings_local.py
+
