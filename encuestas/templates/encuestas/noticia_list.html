@@ -1,0 +1,8 @@
+<h1>Noticias</h1>
+{% for noticia in object_list %}
+    <article>
+        <h2>{{ noticia.titulo }}</h1>
+            {% if noticia.imagen %}<img src="{{ noticia.imagen_principal.url }}">{% endif %}
+        <div>{{ noticia.contenidos|safe }}</div>
+    </article>
+{% endfor %}
